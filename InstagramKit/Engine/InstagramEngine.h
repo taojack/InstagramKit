@@ -73,6 +73,7 @@ typedef enum
 @property (nonatomic, copy) NSString *appRedirectURL;
 @property (nonatomic, copy) NSString *authorizationURL;
 
+@property (nonatomic, copy) NSString *userid;
 @property (nonatomic, copy) NSString *accessToken;
 
 #pragma mark - Login -

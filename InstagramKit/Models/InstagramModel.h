@@ -56,6 +56,8 @@
 #define kImages @"images"
 #define kVideos @"videos"
 #define kLocation @"location"
+#define kName @"name"
+#define kAddress @"street_addres"
 #define kType @"type"
 
 #define kCreator @"from"
