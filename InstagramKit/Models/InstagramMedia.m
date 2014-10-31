@@ -60,6 +60,12 @@
         
         if (IKNotNull(info[kLocation])) {
             _location = CLLocationCoordinate2DMake([(info[kLocation])[kLatitude] doubleValue], [(info[kLocation])[kLongitude] doubleValue]);
+            if (IKNotNull((info[kLocation])[kName])) {
+                _locationName = (info[kLocation])[kName];
+            }
+            if (IKNotNull((info[kLocation])[kAddress])) {
+                _address = (info[kLocation])[kAddress];
+            }
         }
         
         _filter = info[kFilter];

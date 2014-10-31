@@ -86,6 +86,7 @@ typedef NS_OPTIONS(NSInteger, IKLoginScope) {
 @property (nonatomic, copy) NSString *authorizationURL;
 
 @property (nonatomic, copy) NSString *accessToken;
+@property (nonatomic, copy) NSString *userid;
 
 #pragma mark - Login -
 
