@@ -20,6 +20,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 @class InstagramUser;
 @class InstagramMedia;
 @class InstagramPaginationInfo;
@@ -87,6 +88,7 @@ typedef NS_OPTIONS(NSInteger, IKLoginScope) {
 
 @property (nonatomic, copy) NSString *accessToken;
 @property (nonatomic, copy) NSString *userid;
+@property (nonatomic, strong) MKMapView *mapView;
 
 #pragma mark - Login -
 
