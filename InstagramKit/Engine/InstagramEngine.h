@@ -21,6 +21,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
+#import <Parse.h>
+
 @class InstagramUser;
 @class InstagramMedia;
 @class InstagramPaginationInfo;
@@ -88,7 +90,11 @@ typedef NS_OPTIONS(NSInteger, IKLoginScope) {
 
 @property (nonatomic, copy) NSString *accessToken;
 @property (nonatomic, copy) NSString *userid;
+#warning TODO: move this to instance of PLSBackendManager
 @property (nonatomic, strong) MKMapView *mapView;
+@property (nonatomic, strong) PFObject *userDismissListObject;
+@property (nonatomic, strong) PFObject *userBlockListObject;
+@property (nonatomic, strong) PFObject *userFollowListObject;
 
 #pragma mark - Login -
 
