@@ -95,7 +95,6 @@ typedef NS_OPTIONS(NSInteger, IKLoginScope) {
 @property (nonatomic, strong) PFObject *userDismissListObject;
 @property (nonatomic, strong) PFObject *userBlockListObject;
 @property (nonatomic, strong) PFObject *userFollowListObject;
-@property (nonatomic, strong) NSArray *userDiscoverPreFetchList;
 
 #pragma mark - Login -
 
