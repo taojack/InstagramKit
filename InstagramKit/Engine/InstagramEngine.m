@@ -967,7 +967,9 @@ typedef enum
                    withSuccess:(InstagramObjectsBlock)success
                        failure:(InstagramFailureBlock)failure
 {
-    [self getPath:[NSString stringWithFormat:@"users/%@/follows",userId] parameters:nil responseModel:[InstagramUser class] success:^(id response, InstagramPaginationInfo *paginationInfo) {
+    NSDictionary *params = [self parametersFromCount:100 maxId:nil andMaxIdType:kPaginationMaxId];
+    
+    [self getPath:[NSString stringWithFormat:@"users/%@/follows",userId] parameters:params responseModel:[InstagramUser class] success:^(id response, InstagramPaginationInfo *paginationInfo) {
         if(success)
 		{
 			NSArray *objects = response;

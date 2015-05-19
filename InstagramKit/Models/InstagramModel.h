@@ -65,6 +65,7 @@
 
 #define kUsername @"username"
 #define kFullName @"full_name"
+#define kUserID @"id"
 #define kFirstName @"first_name"
 #define kLastName @"last_name"
 #define kProfilePictureURL @"profile_picture"

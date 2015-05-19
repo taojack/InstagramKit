@@ -33,6 +33,7 @@
     if (self && IKNotNull(info)) {
         _username = [[NSString alloc] initWithString:info[kUsername]];
         _fullName = [[NSString alloc] initWithString:info[kFullName]];
+        _userID = [[NSString alloc] initWithString:info[kUserID]];
         _profilePictureURL = [[NSURL alloc] initWithString:info[kProfilePictureURL]];
         if (IKNotNull(info[kBio]))
             _bio = [[NSString alloc] initWithString:info[kBio]];;

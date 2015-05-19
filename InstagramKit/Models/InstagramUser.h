@@ -26,6 +26,7 @@
 
 @property (readonly) NSString* username;
 @property (readonly) NSString* fullName;
+@property (readonly) NSString* userID;
 @property (readonly) NSURL* profilePictureURL;
 @property (readonly) NSString* bio;
 @property (readonly) NSURL* website;

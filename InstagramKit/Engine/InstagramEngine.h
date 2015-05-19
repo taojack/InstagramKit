@@ -96,6 +96,9 @@ typedef NS_OPTIONS(NSInteger, IKLoginScope) {
 @property (nonatomic, strong) PFObject *userBlockListObject;
 @property (nonatomic, strong) PFObject *userFollowListObject;
 @property (nonatomic, strong) NSArray *userDiscoverPreFetchList;
+@property (nonatomic, strong) NSArray *userDiscoverPreviousPreFetchList;
+@property (nonatomic, strong) NSMutableArray *igUserFollowList;
+@property (nonatomic, strong) InstagramPaginationInfo *igUserFollowListNext;
 
 #pragma mark - Login -
 
