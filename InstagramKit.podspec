@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.source_files  = 'InstagramKit', 'InstagramKit/**/*.{h,m}'
   s.exclude_files = 'InstagramKitDemo'
   s.requires_arc = true
-  s.dependency 'AFNetworking', '~>2.0'
+  s.dependency 'AFNetworking', '~>2.4.1'
 
 end
